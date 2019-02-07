@@ -17,6 +17,7 @@ $hash=password_hash($pass_usuario, PASSWORD_DEFAULT);
 $email=$_POST["email"];
 
 include ("conexion.php");
+
 $selectuser = "SELECT * FROM usuarios WHERE usuario='$usuario'";
 $result = mysqli_query($conn, $selectuser);
 $count = mysqli_num_rows($result);
